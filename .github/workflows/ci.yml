@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  build-and-latest:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: mdanish07/devops-capstone-todo:${{ github.sha }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/devops-capstone-todo:${{ github.sha }}
