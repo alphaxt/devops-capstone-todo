@@ -4,6 +4,10 @@ This is the one app the whole 8-lecture course builds on top of. It's deliberate
 
 ## Running it locally
 
+## Contributor
+
+# Muhammad danish
+
 ### With Docker Compose
 
 This is the recommended way to run the current database-backed version:
