@@ -1,12 +1,12 @@
+## Contributor
+
+# Muhammad danish
+
 # DevOps Capstone — To-Do App
 
 This is the one app the whole 8-lecture course builds on top of. It's deliberately tiny: a Node.js + Express backend serving a to-do list API, with a plain HTML/JS frontend — no framework, no build step, nothing that distracts from the DevOps tooling being taught.
 
 ## Running it locally
-
-## Contributor
-
-# Muhammad danish
 
 ### With Docker Compose
 
