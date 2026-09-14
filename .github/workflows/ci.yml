@@ -18,13 +18,13 @@ jobs:
       - run: npm install
       - run: npm test --if-present
 
-      - uses: docker/login-action@v3
+      - uses: docker/login-action@v5
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/devops-capstone-todo:${{ github.sha }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops-capstone-todo:${{ github.sha }}
