@@ -36,3 +36,9 @@ Desktop.ini
 .idea/
 *.swp
 *.swo
+
+
+.terraform/
+*.tfvars
+terraform.tfstate
+terraform.tfstate.*
